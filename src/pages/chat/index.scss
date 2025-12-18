@@ -1,0 +1,594 @@
+.plan-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.plan-scroll {
+  height: 100vh;
+}
+
+// 头部
+.plan-header {
+  padding: 60px 40px 40px;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-subtitle {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+// 表单
+.plan-form {
+  background: #fff;
+  margin: 0 24px;
+  border-radius: 32px;
+  padding: 32px;
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 100%;
+  height: 88px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  padding: 0 24px;
+  font-size: 28px;
+  color: #1f2937;
+  box-sizing: border-box;
+}
+
+.placeholder {
+  color: #9ca3af;
+}
+
+// 热门目的地
+.hot-destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.hot-item {
+  padding: 12px 24px;
+  background: #f5f5f7;
+  border-radius: 50px;
+  font-size: 24px;
+  color: #6b7280;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+    border-color: #6366f1;
+  }
+}
+
+// 天数选择
+.days-selector {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.day-item {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f7;
+  border-radius: 16px;
+  font-size: 26px;
+  color: #6b7280;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #fff;
+    border-color: transparent;
+  }
+}
+
+// 日期选择器
+.date-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.date-picker-item {
+  flex: 1;
+  padding: 20px 24px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid transparent;
+  
+  &.has-value {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+  }
+  
+  .date-label {
+    display: block;
+    font-size: 22px;
+    color: #9ca3af;
+    margin-bottom: 8px;
+  }
+  
+  .date-value {
+    display: block;
+    font-size: 28px;
+    color: #1f2937;
+    font-weight: 500;
+  }
+  
+  &.has-value .date-value {
+    color: #6366f1;
+  }
+}
+
+.date-arrow {
+  font-size: 32px;
+  color: #9ca3af;
+}
+
+.days-summary {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 26px;
+  color: #6366f1;
+  font-weight: 500;
+}
+
+// 偏好选择
+.pref-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.pref-item {
+  padding: 16px 24px;
+  background: #f5f5f7;
+  border-radius: 50px;
+  font-size: 26px;
+  color: #6b7280;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+    border-color: #6366f1;
+  }
+}
+
+// 交通方式选择
+.transport-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.transport-item {
+  padding: 16px 24px;
+  background: #f5f5f7;
+  border-radius: 50px;
+  font-size: 26px;
+  color: #6b7280;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+    border-color: #6366f1;
+  }
+}
+
+// 出行人群选择
+.travel-with-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.travel-with-item {
+  padding: 16px 24px;
+  background: #f5f5f7;
+  border-radius: 50px;
+  font-size: 26px;
+  color: #6b7280;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: rgba(236, 72, 153, 0.1);
+    color: #ec4899;
+    border-color: #ec4899;
+  }
+}
+
+// 预算选择
+.budget-list {
+  display: flex;
+  gap: 16px;
+}
+
+.budget-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  
+  &.active {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: #22c55e;
+    
+    .budget-label {
+      color: #22c55e;
+    }
+  }
+}
+
+.budget-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.budget-label {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.budget-desc {
+  font-size: 22px;
+  color: #9ca3af;
+}
+
+// 文本域
+.form-textarea {
+  width: 100%;
+  height: 160px;
+  background: #f5f5f7;
+  border-radius: 16px;
+  padding: 20px 24px;
+  font-size: 28px;
+  color: #1f2937;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+.char-count {
+  display: block;
+  text-align: right;
+  font-size: 22px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+// 生成按钮
+.generate-btn {
+  width: 100%;
+  height: 96px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 16px;
+  
+  &.loading {
+    background: #9ca3af;
+  }
+  
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}
+
+// 状态区域
+.status-section {
+  padding: 24px;
+}
+
+.status-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.status-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.status-reset {
+  font-size: 24px;
+  color: #6366f1;
+}
+
+// 步骤
+.status-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  opacity: 0.4;
+  
+  &.active {
+    opacity: 1;
+    
+    .step-dot {
+      background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+      color: #fff;
+      animation: pulse 1s infinite;
+    }
+  }
+  
+  &.done {
+    opacity: 1;
+    
+    .step-dot {
+      background: #22c55e;
+      color: #fff;
+    }
+    
+    .step-text {
+      color: #22c55e;
+    }
+  }
+  
+  &.error {
+    .step-dot {
+      background: #ef4444;
+    }
+  }
+}
+
+.step-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.step-text {
+  font-size: 26px;
+  color: #6b7280;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+// 加载条
+.status-loading {
+  margin-top: 24px;
+}
+
+.loading-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  border-radius: 4px;
+  animation: loading 1.5s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+// 加载提示
+.loading-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 12px;
+  
+  .tip-icon {
+    font-size: 32px;
+    margin-right: 12px;
+  }
+  
+  .tip-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: #92400e;
+  }
+}
+
+.tip-hint {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 24px;
+  color: #9ca3af;
+}
+
+// 结果区域
+.result-section {
+  padding: 0 24px 24px;
+}
+
+// 路线地图卡片
+.route-map-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.map-header {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.map-hint {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.route-map-image {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.result-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.result-header {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  padding: 24px 32px;
+}
+
+.result-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.result-content {
+  padding: 24px 32px;
+}
+
+// 操作按钮
+.result-actions {
+  display: flex;
+  gap: 16px;
+  padding: 24px 32px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.action-btn {
+  flex: 1;
+  height: 80px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 500;
+  
+  &.save-btn {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #fff;
+  }
+  
+  &.share-btn {
+    background: #f5f5f7;
+    color: #1f2937;
+    border: 2px solid #e5e7eb;
+  }
+  
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+}
+
+// 重置区域
+.reset-section {
+  margin-top: 24px;
+}
+
+.reset-btn {
+  width: 100%;
+  height: 88px;
+  background: transparent;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  
+  &:active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

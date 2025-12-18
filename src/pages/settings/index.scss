@@ -1,0 +1,61 @@
+.settings-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+  padding-bottom: 40px;
+}
+
+.settings-group {
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.group-title {
+  padding: 24px 32px 12px;
+  font-size: 24px;
+  color: #9ca3af;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 32px;
+  border-bottom: 1px solid #f3f4f6;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &.danger {
+    .item-title {
+      color: #ef4444;
+    }
+  }
+}
+
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-icon {
+  font-size: 36px;
+}
+
+.item-title {
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.item-arrow {
+  font-size: 32px;
+  color: #9ca3af;
+}
+
+.version-info {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  color: #9ca3af;
+}

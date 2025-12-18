@@ -1,0 +1,197 @@
+.explore-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 24px;
+  padding: 24px 32px;
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon {
+  font-size: 32px;
+  margin-right: 16px;
+}
+
+.search-placeholder {
+  font-size: 28px;
+  color: #9ca3af;
+}
+
+.category-scroll {
+  white-space: nowrap;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.category-list {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.category-item {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 26px;
+  color: #6b7280;
+  
+  &.active {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.guide-list {
+  padding: 0 24px;
+  height: calc(100vh - 280px);
+  box-sizing: border-box;
+}
+
+.guide-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.guide-card {
+  width: calc(50% - 12px);
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.guide-cover {
+  position: relative;
+  height: 240px;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%);
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-emoji {
+  font-size: 80px;
+}
+
+.destination-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 22px;
+}
+
+.guide-content {
+  padding: 20px;
+}
+
+.guide-title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f2937;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.guide-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guide-author {
+  font-size: 22px;
+  color: #9ca3af;
+}
+
+.guide-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-item {
+  font-size: 22px;
+  color: #6b7280;
+  
+  .liked {
+    color: #ef4444;
+  }
+  
+  .favorited {
+    color: #f59e0b;
+  }
+}
+
+// 天数标签
+.days-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(99, 102, 241, 0.9);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+
+// 攻略描述
+.guide-desc {
+  font-size: 24px;
+  color: #6b7280;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+// 加载状态
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.loading-text {
+  font-size: 28px;
+  color: #9ca3af;
+}
+
+// 底部提示
+.list-footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 24px;
+  color: #9ca3af;
+}

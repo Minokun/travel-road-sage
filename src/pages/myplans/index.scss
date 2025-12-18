@@ -1,0 +1,164 @@
+.myplans-page {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.page-header {
+  padding: 32px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.page-count {
+  font-size: 26px;
+  color: #9ca3af;
+}
+
+.plans-list {
+  padding: 24px;
+  height: calc(100vh - 120px);
+}
+
+.plan-card {
+  display: flex;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-cover {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cover-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.public-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(34, 197, 94, 0.9);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.card-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-date {
+  font-size: 22px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.action-btn {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 20px;
+  font-size: 24px;
+  
+  &.share {
+    background: rgba(99, 102, 241, 0.1);
+    color: #6366f1;
+  }
+  
+  &.delete {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 28px;
+  color: #9ca3af;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 100px;
+  margin-bottom: 24px;
+}
+
+.empty-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.empty-desc {
+  font-size: 26px;
+  color: #9ca3af;
+  margin-bottom: 32px;
+}
+
+.create-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #fff;
+  padding: 20px 48px;
+  border-radius: 40px;
+  font-size: 28px;
+  font-weight: 600;
+}

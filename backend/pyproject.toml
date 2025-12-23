@@ -1,0 +1,22 @@
+[project]
+name = "travel-ai-backend"
+version = "1.0.0"
+description = "旅行路算子 - 智能旅行规划后端服务"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.27.0",
+    "httpx-sse>=0.4.0",
+    "openai>=1.50.0",
+    "pydantic>=2.9.0",
+    "ddgs>=6.0.0",
+    "beautifulsoup4>=4.12.0",
+    "aiohttp>=3.10.0",
+    "duckdb>=1.1.0",
+]
+
+[project.scripts]
+start = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"

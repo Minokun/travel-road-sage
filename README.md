@@ -77,11 +77,14 @@
 npm install
 ```
 
+### 小程序后台和高德相关api调用代码
+请参考backend文件夹中的README
+
 ### 配置后端地址
 
 前端请求地址统一从 `src/config/index.ts` 的 `API_BASE` 读取：
 
-- 线上默认：`https://sevnday.com/travel-api`
+- 线上默认：`https://ip/travel-api`
 - 本地开发：将 `API_BASE` 改为你的本地后端地址（例如 `http://localhost:8000/api`）
 
 如果你在代码里使用了 `src/services/api.ts`，也需要同步修改其中的 `BASE_URL`。
